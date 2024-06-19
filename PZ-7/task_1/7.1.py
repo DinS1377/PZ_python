@@ -19,7 +19,3 @@ for i in qwerty:
 
 
 print(f"общее число букв: {lat+rus}")
-
-
-
-
