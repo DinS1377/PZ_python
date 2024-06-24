@@ -23,7 +23,6 @@ shutil.move(file_from_pz6_2, 'test/')
 shutil.move(file_from_pz7, 'test/test1/test.txt')
 
 
-
 files_in_test = [f for f in os.listdir('test') if os.path.isfile(os.path.join('test', f))]
 for file in files_in_test:
     file_size = os.path.getsize(os.path.join('test', file))

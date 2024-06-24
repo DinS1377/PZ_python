@@ -7,7 +7,7 @@ def check_number():
     try:
         number = int(entry.get())
         if number > 99 and number < 1000:
-            result1_label.config(text=f"первая цифра: {number//100}")
+            result1_label.config(text=f"первая цифра: {number % 100 % 10}")
             result2_label.config(text=f"средняя цифра: {number % 100 // 10}")
         else:
             result1_label.config(text="Введите ТРЁХЗНАЧНОЕ целое число")
